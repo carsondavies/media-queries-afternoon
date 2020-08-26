@@ -1,0 +1,112 @@
+.navbar {
+  height: 10vh;
+  width: 100vw;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-between;
+  padding: 45px;
+  box-sizing: border-box;
+  align-items: center;
+}
+
+.start-bootstrap {
+  background-color: transparent;
+  border: none;
+  font-size: 20px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(58, 55, 55);
+  margin-left: 20px;
+}
+
+.start-bootstrap:hover {
+  cursor: pointer;
+  color: white;
+  animation: whiten .5s infinite
+}
+
+.navbar-button-container {
+  width: 40%;
+  background-color: transparent;
+  display: flex;
+  justify-content: space-evenly
+}
+
+.navbar-button {
+  background-color: transparent;
+  border: none;
+  font-size: 17px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(58, 55, 55)
+}
+
+.navbar-button:hover {
+  cursor: pointer;
+  color: white;
+  animation: whiten .5s infinite
+}
+
+.navbar-icon {
+  display: none;
+  color: rgb(103, 149, 103);
+  font-size: 15px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border: 1px solid rgb(103, 149, 103);
+  border-radius: 7%;
+  height: 40px;
+  width: 65px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden{
+  display: none;
+}
+
+.dropdown {
+  height: 20vh;
+  width: 100vw;
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 10px;
+  position: fixed;
+  left: 0;
+  top: 12vh;
+}
+
+.dropdown > button {
+  color: gray;
+  margin-left: 55px;
+  font-size: 17px;
+  padding: 5px;
+}
+
+@media (max-width: 900px){
+  .navbar{
+    background-color: white;
+  }
+  .start-bootstrap{
+    color: black;
+  }
+  .start-bootstrap:hover{
+    color: grey;
+  }
+  .navbar-icon{
+    display: flex;
+  }
+  .navbar-button-container{
+    display: none;
+  }
+  .dropdown > button:hover {
+    color: black;
+  }
+}
+
+@media (min-width: 900px){
+  .dropdown{
+    display: none;
+  }
+}
